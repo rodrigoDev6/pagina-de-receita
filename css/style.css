@@ -1,0 +1,148 @@
+/* global*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* import font */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+
+body{
+  background-image: linear-gradient(to right, #f2f2f2, #ecf0f7, #def1f9, #d1f1f2, #ccf1e3);
+}
+
+main{
+  border-radius: 5px;
+  margin: 40px;
+
+  background: #FFFFFF;
+  color: #1B1B1B;
+}
+
+h1{
+  padding: 42px 0 20px 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+article section h2{
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  padding: 42px 0 20px 0;
+}
+
+/* FIGURE */
+figure{
+  position: relative;
+
+  width: 90%;
+  height: 400px;
+
+  margin: 0 auto;
+  border-radius: 8px;
+
+  background-image: url(../assets/waffle.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figcaption{
+  font-size: 12px;
+  color: #8F8F8F;
+
+  position: absolute;
+  right: 0;
+  bottom: -1.3rem;  
+}
+
+/* end */
+
+article {
+  display: grid;
+  
+}
+
+article section{
+  display: flex;
+  flex-direction: column; 
+}
+
+section ul, ol{
+  margin: .625rem 3.2rem;  
+  
+}
+
+section ul li, ol li{
+  padding: .8rem;
+  line-height: 1.5rem;
+  color: #39393A;
+}
+
+
+section p{
+  margin: .625rem 2.2rem;  
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.4rem;
+}
+
+@media screen and (min-width: 1700px){
+  main{
+    border-radius: 5px;
+    margin: 2rem 18rem;
+  
+    background: #FFFFFF;
+    color: #1B1B1B;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 568px){
+  main{
+    border-radius: 5px;
+    margin: .5rem;
+  
+  }
+
+  h1{
+    padding: 32px auto 20px auto;
+  }
+  
+  article section h2{
+    padding: 20px 0 20px 0;
+  }
+
+  figure{
+    height: 200px;
+ 
+    border-radius: 8px;
+  }
+  
+  figcaption{
+    bottom: -1rem;  
+  }
+
+
+section ul, ol{
+  margin: .625rem .8rem auto 2rem;  
+}
+
+section ul li, ol li{
+  padding: 8px 8px 8px 8px;
+}
+
+
+section p{
+  margin: .625rem 2.2rem;  
+}
+}
